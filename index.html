@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desafío I - Formulario de Reserva</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <h1>Formulario de Reserva</h1>
+    <form class="form-register" onsubmit="return validacion();">
+        <div class="contenedor-inputs">
+            <input type="text" id="rut" name="rut" placeholder="Rut" class="inputcss">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="inputcss">
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="inputcss">
+            <input type="text" id="edad" name="edad" placeholder="Edad" class="inputcss">
+            <input type="email" id="correo" name="correo" placeholder="Correo" class="inputcss">
+
+            <div class="inputcss" id="cuadro">
+                <form name="buscar" class="inputcss">
+                    <select name="lista" size="1">
+                    <option type="text" id="traumatologia">Traumatologia</option>
+                    <option type="text" id="radiología">Radiología</option>
+                    <option type="text" id="dental">Dental</option>
+                   
+                    </select>
+                    <!--<input type="button" value="Escoge" onClick="busqueda()">-->
+                    </form>  
+
+            </div>
+              
+            <input type="date" id="fecha" name="fecha" placeholder="Fecha" class="inputcss">
+            <input type="time" id="hora" name="hora" placeholder="Hora" class="inputcss">
+           
+            <input type="submit" value="Reservar" class="btn-enviar">
+
+        </div>
+    </form> 
+    
+ <script type="text/JavaScript" src="validar.js"></script>   
+</body>
+</html>
